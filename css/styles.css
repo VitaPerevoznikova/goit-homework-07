@@ -31,17 +31,13 @@ img {
 button {
   cursor: pointer;
 }
-.container {
+/* .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-.sections {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+} */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--slate);
@@ -93,22 +89,302 @@ body {
 .studio-logo-footer {
   color: #f4f4fd;
 }
-/* Header Navigation */
+/* !!!!!!!!!!!!!!!!!!!!----Mobil----!!!!!!!!!!!!!!! */
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* !!!!!!!!!!!-------Tablet------!!!!!!!!!! */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+/* !!!!!!!!!!!!!------Dextop-------!!!!!!!!!! */
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+/* Mobil */
+.hero {
+  padding: 188px 0;
+  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/hero/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 428px),
+screen and (min-resolution: 192dpi) and (max-width: 428px),
+screen and (min-resolution: 2dppx) and (max-width: 428px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/hero/people-office\ 1@2x.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .address-header {
+    display: none;
+  }
+  .feature{
+    display: none;
+  }
+  /* Mobil open button */
+  .mobail-menu-button-open {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobil-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid#000000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .mobil-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  /* < !-- Mobil menu --> */
+  .mobil-menu-container {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .button-modal-close-menu {
+    background-color: #e7e9fc;
+    color: var(--naviblue);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* Menu list */
+  .menu-list-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .menu-description {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+  }
+  .menu-list-item {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .menu-address-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+    .soft-skills-item {
+      display: block;
+      margin-bottom: 72px;
+    }
+}
+    /* Section 2 */
+  .soft-skills {
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+}
+/* Section tablet+mobil */
+  .suptitle-soft-skills {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   letter-spacing: 0.02em;
+   color: var(--naviblue);
+   text-transform: capitalize;
+   margin-bottom: 8px;
+ }
+ .section-description-soft-skills {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: var(--slate);
+ }
+/* !!!!!!!!!!!!!------Tablet-------!!!!!!!!!! */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url('../images/hero/people-office\ 1@2x.jpg');
+  }
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (min-width: 768px) {
+  .mobail-menu-button-open {
+    display: none;
+  }
+  .mobil-menu {
+    display: none;
+  }
+  .feature{
+    display: none;
+  }
+     /* Header Navigation */
+  .header-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+  .menu-link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-header {
+    margin-left: auto;
+  }
+  .header-contacts {
+    display: block;
+    align-items: center;
+    row-gap: 40px;
+  }
+    /* Adress  */
+  .address-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color:#434455; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .current {
+    position: relative;
+    color: var(--ocean);
+  }
+  .current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
+  }
+    /* Section 2 */
+    .soft-skills {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 72px;
+    }
+    .soft-skills-item {
+      width: calc((100% - 24px) / 2);
+    }
+}
+/* !!!!!!!!!!!!!------Dextop-------!!!!!!!!!! */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url('../images/hero/people-office\ 1@2x.jpg');
+  }
+}
+@media screen and (max-width: 1158px){
+  .soft-skills{
+    padding-top: 96px;
+  }
+    .section-three {
+      display: none;
+    }
+}
+@media screen and (min-width: 1158px) {
+  .sections {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  /* Header Navigation */
 .header-page-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
 .page-nav {
   display: flex;
   align-items: center;
-  /* padding: 24px 0; */
 }
 .menu {
   display: flex;
@@ -128,7 +404,6 @@ body {
   position: relative;
   color: var(--ocean);
 }
-
 .current::after {
   content: '';
   position: absolute;
@@ -138,10 +413,9 @@ body {
   height: 4px;
   background-color: var(--ocean);
   border-radius: 2px;
-}
+} 
 /* Adress  */
-.address-header {
-  font-style: normal;
+  .address-header {
   margin-left: auto;
 }
 .header-contacts {
@@ -150,6 +424,7 @@ body {
   gap: 40px;
 }
 .address-link {
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -157,59 +432,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-/* Main menu  */
-
-/* Section 1 */
-.hero {
-  padding: 188px 0;
-  background-color: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 1440px;
-  background-size: cover;
-  margin-right: auto;
-  margin-left: auto;
-}
-.hero-tex {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  text-align: center;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
-}
-
-.button-hero {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: block;
-  min-width: 169px;
-  min-height: 56px;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-hero:focus,
-.button-hero:hover {
-  color: #ffffff;
-  background-color: #404bbf;
 }
 /* Section 2 */
 .soft-skills {
@@ -235,9 +457,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-}
+} 
 /* Feature */
-.feature {
+ .feature {
   display: flex;
   gap: 24px;
 }
@@ -265,7 +487,44 @@ body {
 .section-three {
   padding-bottom: 120px;
 }
+}
+/* Main menu  */
 
+/* Section 1 */
+.hero-tex {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.button-hero {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: block;
+  min-width: 169px;
+  min-height: 56px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-hero:focus,
+.button-hero:hover {
+  color: #ffffff;
+  background-color: #404bbf;
+}
 /* Section 4 */
 .section-four {
   background-color: #f4f4fd;
@@ -377,14 +636,12 @@ body {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-
 .filter-group {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
   gap: 24px;
 }
-
 .portfolio-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -724,7 +981,7 @@ margin-bottom: 48px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color:var(--naviblue);
+  color: var(--naviblue);
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
