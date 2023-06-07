@@ -305,6 +305,12 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 }
+
+@media screen and (max-width: 428px) {
+  .modal{
+    width: 320px;
+  }
+  }
 @media screen and (max-width: 768px) {
   .section-three {
     display: none;
@@ -494,11 +500,8 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-    /* Modal  */
-      .modal {
-        width: 392px;
-      }
 }
+
 /*____________ Main_____________- */
 /* Logotip */
 .logo {
