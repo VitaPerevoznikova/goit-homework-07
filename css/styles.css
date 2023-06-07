@@ -308,9 +308,12 @@ body {
 
 @media screen and (max-width: 428px) {
   .modal{
-    width: 320px;
+    width: 310px;
   }
-  }
+    .social-list-menu {
+      gap: 20px;
+    }
+}
 @media screen and (max-width: 768px) {
   .section-three {
     display: none;
@@ -417,7 +420,6 @@ body {
   .social-list-menu {
     display: flex;
     justify-content: center;
-    gap: 40px;
   }
   .social-list-link-menu {
     display: flex;
@@ -473,7 +475,7 @@ body {
   }
   /* Section 4 */
     .social-list {
-      gap: 17px;
+      gap: 20px;
     }
   .our-team-card:not(:last-child) {
     margin-bottom: 72px;
