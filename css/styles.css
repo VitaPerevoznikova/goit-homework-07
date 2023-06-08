@@ -306,9 +306,12 @@ body {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 428px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .modal {
     width: 310px;
+  }
+  .social-list{
+    gap: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -391,7 +394,7 @@ body {
     flex-direction: column;
     gap: 40px;
   }
-  .menu-button{
+  .menu-button {
     background-color: transparent;
     border: none;
     font-family: 'Roboto';
@@ -401,8 +404,8 @@ body {
     letter-spacing: 0.02em;
     padding: 0;
   }
-  .munu-titel{
-    color: var(--ocean); 
+  .munu-titel {
+    color: var(--ocean);
   }
   .menu-description-tel {
     font-weight: 700;
@@ -425,13 +428,16 @@ body {
     border-radius: 50%;
     background-color: var(--iris);
   }
-  @media screen and (min-width: 428px) {
+  @media screen and (min-width: 425px) {
     .menu-description-tel {
       font-size: 36px;
     }
     .social-list-menu {
       gap: 56px;
     }
+        .social-list {
+          gap: 24px;
+        }
   }
   .menu-list-item {
     font-weight: 700;
@@ -469,14 +475,12 @@ body {
     text-align: center;
   }
   /* Section 4 */
-  .social-list {
-    gap: 20px;
-  }
+  
   .our-team-card:not(:last-child) {
     margin-bottom: 72px;
   }
   .container-section-four {
-    width: 264px;
+    width: 294px;
   }
   /* Customers  */
 
@@ -612,7 +616,7 @@ body {
   display: inline-block;
   justify-content: center;
 }
-.feature-link-list{
+.feature-link-list {
   display: none;
 }
 /* Section tablet+mobil */
@@ -635,7 +639,7 @@ body {
 /* Section 4 */
 .section-four {
   background-color: #f4f4fd;
-} 
+}
 .our-team-card {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -978,14 +982,15 @@ body {
       url('../images/hero/people-office.jpg');
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1157px){
-  .footer-container{
-   column-gap: 24px;
-   row-gap: 72px; 
-   width: 552px;
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+  .footer-container {
+    column-gap: 24px;
+    row-gap: 72px;
+    width: 552px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -1093,9 +1098,6 @@ body {
   .our-team-card {
     width: calc((100% - 24px) / 2);
   }
-  .social-list {
-    gap: 24px;
-  }
   /* Customers  */
   .container-customers {
     width: 552px;
@@ -1113,7 +1115,7 @@ body {
   }
   /* Part 3 */
   .footer-description {
-  width: 264px;
+    width: 264px;
   }
   .footer-wraper-part-three {
     position: relative;
@@ -1317,9 +1319,9 @@ body {
   }
   /* Footer  */
   .footer-container {
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
   }
-  .footer-description{
+  .footer-description {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   /* Footer part 1 */
@@ -1327,7 +1329,7 @@ body {
     margin-right: 120px;
   }
   /* Footer part 2*/
-  .footer-container-part-two{
+  .footer-container-part-two {
     margin-right: 80px;
   }
   /* Footer part 3 */
