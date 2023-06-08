@@ -475,7 +475,6 @@ body {
     text-align: center;
   }
   /* Section 4 */
-  
   .our-team-card:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -637,6 +636,9 @@ body {
   color: var(--slate);
 }
 /* Section 4 */
+.section-four {
+  background-color: #f4f4fd;
+}
 .our-team-card {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
