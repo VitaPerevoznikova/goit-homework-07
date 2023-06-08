@@ -637,9 +637,6 @@ body {
   color: var(--slate);
 }
 /* Section 4 */
-.section-four {
-  background-color: #f4f4fd;
-}
 .our-team-card {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -1075,6 +1072,9 @@ body {
     border-radius: 2px;
   }
   /* Section 2 */
+  .container-section-two{
+    width: 766px;
+  }
   .soft-skills {
     display: flex;
     flex-wrap: wrap;
