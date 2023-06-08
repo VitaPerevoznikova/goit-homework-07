@@ -1098,6 +1098,9 @@ body {
   .our-team-card {
     width: calc((100% - 24px) / 2);
   }
+  .social-list{
+    gap: 24px;
+  }
   /* Customers  */
   .container-customers {
     width: 552px;
